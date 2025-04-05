@@ -2,14 +2,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Tassnex Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f6fc;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .card {
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      color: #34495e;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #2c3e50;
+    }
+  </style>
 </head>
 <body>
   <h1>Dashboard Overview</h1>
-  <div class="card">Annex Coolant - Daily Orders: 25 | Returns: 3 | Profit: 5400 BDT</div>
-  <div class="card">Annex Fuel - Daily Orders: 15 | Returns: 2 | Profit: 4200 BDT</div>
+
+  <div class="card">
+    <h2>Annex Coolant</h2>
+    <p>Daily Orders: 25</p>
+    <p>Returns: 3</p>
+    <p>Profit: 5400 BDT</p>
+  </div>
+
+  <div class="card">
+    <h2>Annex Fuel</h2>
+    <p>Daily Orders: 15</p>
+    <p>Returns: 2</p>
+    <p>Profit: 4200 BDT</p>
+  </div>
 </body>
 </html>
