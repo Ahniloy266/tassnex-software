@@ -1,1 +1,39 @@
-<!DOCTYPE html><html><head><title>Login</title></head><body><form><input type='text' placeholder='Username'><br><input type='password' placeholder='Password'><br><button>Login</button></form></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tassnex Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="logo.png" alt="Tassnex Logo" class="logo" />
+        <h2>Login to your account</h2>
+        <form class="login-form">
+            <input type="text" placeholder="Username" required><br>
+            <div class="password-wrapper">
+                <input type="password" id="password" placeholder="Password" required>
+                <span id="togglePassword" style="cursor: pointer;">👁️</span>
+            </div>
+            <div class="options">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+        const togglePassword = document.getElementById('togglePassword');
+        const password = document.getElementById('password');
+        togglePassword.onclick = function () {
+            if (password.type === "password") {
+                password.type = "text";
+            } else {
+                password.type = "password";
+            }
+        };
+    </script>
+</body>
+</html>
