@@ -1,1 +1,0 @@
-This is a dummy content for README.txt in TASSNEX Software.
